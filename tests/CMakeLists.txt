@@ -20,7 +20,7 @@ include_directories(
 
 add_executable(bench ${bench_SRCS})
 
-target_link_libraries(bench bench2 api rdft dft kernel m)
+target_link_libraries(bench bench2 api rdft dft reodft kernel m)
 
 
 ########### install files ###############
