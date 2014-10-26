@@ -1,4 +1,4 @@
-#add_subdirectory(scalar)
+add_subdirectory(scalar)
 #add_subdirectory(simd)
 
 
