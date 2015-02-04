@@ -50,7 +50,7 @@ set(BUILT_SOURCES ${ALL_CODELETS} ${CODLIST})
 
 set(dft_scalar_codelets_STAT_SRCS
     ${BUILT_SOURCES}
-    dummy.c
+    ${CMAKE_SOURCE_DIR}/dummy.c
 )
 
 add_library(dft_scalar_codelets STATIC ${dft_scalar_codelets_STAT_SRCS})

@@ -39,8 +39,8 @@ add_subdirectory(m4)
 
 add_subdirectory(genfft)
 
-message(STATUS "${CMAKE_CURRENT_SOURCE_DIR}: skipped subdir $(GENFFT)")
-message(STATUS "${CMAKE_CURRENT_SOURCE_DIR}: skipped subdir $(CHICKEN_EGG)")
+#message(STATUS "${CMAKE_CURRENT_SOURCE_DIR}: skipped subdir $(GENFFT)")
+#message(STATUS "${CMAKE_CURRENT_SOURCE_DIR}: skipped subdir $(CHICKEN_EGG)")
 
 ########### next target ###############
 
