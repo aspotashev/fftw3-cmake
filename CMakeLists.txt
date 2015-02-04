@@ -21,6 +21,8 @@ CHECK_PROTOTYPE_EXISTS(gettimeofday "sys/time.h;unistd.h" HAVE_GETTIMEOFDAY)
 
 configure_file(config.h.in config.h)
 
+include(cmake/macro.cmake)
+
 add_subdirectory(support)
 add_subdirectory(kernel)
 #add_subdirectory(simd-support)

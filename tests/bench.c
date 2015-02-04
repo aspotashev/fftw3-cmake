@@ -18,10 +18,12 @@ static const char *mkcc(void) { return FFTW(cc); }
 static const char *mkcodelet_optim(void) { return FFTW(codelet_optim); }
 
 BEGIN_BENCH_DOC
+/*
 BENCH_DOC("name", "fftw3")
 BENCH_DOCF("version", mkversion)
 BENCH_DOCF("cc", mkcc)
 BENCH_DOCF("codelet-optim", mkcodelet_optim)
+*/
 END_BENCH_DOC 
 
 static FFTW(iodim) *bench_tensor_to_fftw_iodim(bench_tensor *t)

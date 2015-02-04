@@ -1,6 +1,3 @@
-add_subdirectory(scalar)
-#add_subdirectory(simd)
-
 
 ########### next target ###############
 
@@ -46,7 +43,11 @@ include_directories(
     ${CMAKE_BINARY_DIR}
     ${CMAKE_SOURCE_DIR}/kernel
     ${CMAKE_SOURCE_DIR}/dft
+    ${CMAKE_SOURCE_DIR}/rdft
 )
+
+add_subdirectory(scalar)
+#add_subdirectory(simd)
 
 add_library(rdft STATIC ${rdft_STAT_SRCS})
 
