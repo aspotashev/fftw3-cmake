@@ -1,0 +1,30 @@
+
+########### next target ###############
+
+SET(rdft_altivec_codelets_STAT_SRCS
+   $(BUILT_SOURCES)
+)
+
+add_library(rdft_altivec_codelets STATIC ${rdft_altivec_codelets_STAT_SRCS})
+
+
+########### install files ###############
+
+
+
+
+#original Makefile.am contents follow:
+
+#AM_CFLAGS = $(ALTIVEC_CFLAGS)
+#SIMD_HEADER=simd-altivec.h
+#
+#include $(top_srcdir)/rdft/simd/codlist.mk
+#include $(top_srcdir)/rdft/simd/simd.mk
+#
+#if HAVE_ALTIVEC
+#
+#noinst_LTLIBRARIES = librdft_altivec_codelets.la
+#BUILT_SOURCES = $(EXTRA_DIST)
+#librdft_altivec_codelets_la_SOURCES = $(BUILT_SOURCES)
+#
+#endif

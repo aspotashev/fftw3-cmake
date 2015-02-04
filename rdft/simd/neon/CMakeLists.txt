@@ -1,0 +1,30 @@
+
+########### next target ###############
+
+SET(rdft_neon_codelets_STAT_SRCS
+   $(BUILT_SOURCES)
+)
+
+add_library(rdft_neon_codelets STATIC ${rdft_neon_codelets_STAT_SRCS})
+
+
+########### install files ###############
+
+
+
+
+#original Makefile.am contents follow:
+
+#AM_CFLAGS = $(NEON_CFLAGS)
+#SIMD_HEADER=simd-neon.h
+#
+#include $(top_srcdir)/rdft/simd/codlist.mk
+#include $(top_srcdir)/rdft/simd/simd.mk
+#
+#if HAVE_NEON
+#
+#noinst_LTLIBRARIES = librdft_neon_codelets.la
+#BUILT_SOURCES = $(EXTRA_DIST)
+#librdft_neon_codelets_la_SOURCES = $(BUILT_SOURCES)
+#
+#endif
