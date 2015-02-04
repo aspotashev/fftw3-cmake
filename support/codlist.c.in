@@ -1,0 +1,11 @@
+#include "ifftw.h"
+@INCLUDE_SIMD_HEADER@
+
+@CODE_EXTERN_FUNCTION_PROTOTYPES@
+
+
+extern const solvtab @SOLVTAB_NAME@;
+const solvtab @SOLVTAB_NAME@ = {
+    @CODE_SOLVTAB_LIST@
+    SOLVTAB_END
+};
